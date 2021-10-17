@@ -341,6 +341,7 @@ hr {
 .lightbox-wrapper {
   background-color: #101010;
   position: fixed;
+  width: 100%;
 }
 .lightbox-wrapper .lightbox-close {
   position: fixed;
