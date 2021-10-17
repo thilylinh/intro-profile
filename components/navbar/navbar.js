@@ -1,5 +1,7 @@
 import Image from "next/image";
 import logo from "../../public/images/logo/lylinh.png";
+import Link from "next/link";
+
 export default function Nav() {
   return (
     <nav className="navbar-expand-md navbar fixed-top" id="navbar">
@@ -23,9 +25,9 @@ export default function Nav() {
       >
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a className="nav-link" href="/about">
-              About
-            </a>
+            <Link href="/about">
+              <a className="nav-link">About</a>
+            </Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#resume">
