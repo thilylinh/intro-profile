@@ -38,8 +38,7 @@ export default function About() {
                     <div className="content-block">
                       <h2 className="content-subtitle">Who am i?</h2>
                       <h6 className="content-title">
-                        I'm Emma Smith, a visual UX/UI Designer and Web
-                        Developer
+                        {"I'm Emma Smith, a visual UX/UI Designer and Web Developer"}
                       </h6>
                       <div className="content-description">
                         <p>
