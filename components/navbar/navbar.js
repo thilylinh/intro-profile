@@ -5,9 +5,11 @@ import Link from "next/link";
 export default function Nav() {
   return (
     <nav className="navbar-expand-md navbar fixed-top" id="navbar">
-      <a className="navbar-brand" data-scroll="" href="#home-area">
-        <Image src={logo} />
-      </a>
+      <Link href="/">
+        <a className="navbar-brand">
+          <Image src={logo} />
+        </a>
+      </Link>
       <span
         className="navbar-menu ml-auto"
         data-toggle="collapse"
