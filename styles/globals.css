@@ -11,7 +11,6 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.95;
-  overflow: hidden;
   position: relative;
 }
 i.icon {
@@ -68,6 +67,7 @@ hr {
 }
 .button-main.button-scheme {
   color: #fff;
+  background-color: #009e66;
 }
 .rc-mb-0 {
   margin-bottom: 0 !important;
@@ -340,7 +340,6 @@ hr {
 }
 .lightbox-wrapper {
   background-color: #101010;
-  position: fixed;
   width: 100%;
 }
 .lightbox-wrapper .lightbox-close {
@@ -453,7 +452,7 @@ hr {
   .lightbox-content
   .section-heading.page-heading
   > .animated-bar {
-  background-color: #fff;
+  background-color: #009e66;
   content: "";
   display: block;
   height: 4px;
@@ -521,6 +520,8 @@ hr {
 .lightbox-wrapper .lightbox-content .section-heading > .section-description {
   font-size: 15px;
   margin-bottom: 17px;
+  font-weight: 600;
+  color:#9f9f9f
 }
 @media (max-width: 991.98px) {
   .lightbox-wrapper .lightbox-content .single-section:not(:last-child) {
@@ -758,6 +759,7 @@ hr {
 .info-section .info-content .content-subtitle {
   font-size: 24px;
   margin-bottom: 15px;
+  color:#009e66;
 }
 .info-section .info-content .content-title {
   font-size: 31px;
@@ -772,6 +774,7 @@ hr {
   border-bottom: 2px solid rgba(255, 255, 255, 0.08);
   margin-bottom: 0;
   padding-bottom: 29px;
+  color:#9f9f9f
 }
 .info-section .info-content .content-info {
   font-size: 15px;
@@ -792,6 +795,10 @@ hr {
 .info-section .info-content .content-info .single-info > p {
   display: inline-block;
   margin-bottom: 0;
+  color: #9f9f9f;
+}
+.info-section .info-content .content-info .single-info > p > a{
+  color: #009e66;
 }
 .info-section .info-content .content-download {
   margin-right: 23px;

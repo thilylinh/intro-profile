@@ -32,24 +32,26 @@ export default function Nav() {
             </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#resume">
-              Resume
-            </a>
+            <Link href="/resume">
+              <a className="nav-link">Resume</a>
+            </Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a className="nav-link" href="#portfolio">
               Portfolio
             </a>
+          </li> */}
+          <li className="nav-item">
+            <Link href="/blog">
+              <a className="nav-link">Blog</a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#blog">
-              Blog
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#contact">
-              Contact
-            </a>
+            <Link href="/contact">
+              <a className="nav-link">
+                Contact
+              </a>
+            </Link>
           </li>
         </ul>
       </div>

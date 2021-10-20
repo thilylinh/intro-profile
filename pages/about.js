@@ -1,4 +1,10 @@
-import Link from 'next/link'
+import Link from "next/link";
+import Image from "next/image";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
+import ServiceItem from "../components/service-box/serviceItem";
+import CarouselMulti from "../components/carousel/carousel";
 
 export default function About() {
   return (
@@ -27,10 +33,10 @@ export default function About() {
               <div className="info-section single-section">
                 <div className="row align-items-center">
                   <div className="col-12 col-lg-5 info-img">
-                    <image
-                      className="img-fluid img-thumbnail"
-                      src="img/info-img.jpg"
-                      alt="About Picture"
+                    <Image
+                      src="/images/image/my-image.jpg"
+                      width="2048"
+                      height="2048"
                     />
                   </div>
 
@@ -38,30 +44,29 @@ export default function About() {
                     <div className="content-block">
                       <h2 className="content-subtitle">Who am i?</h2>
                       <h6 className="content-title">
-                        {"I'm Emma Smith, a visual UX/UI Designer and Web Developer"}
+                        {"I'm Thi Ly Linh, a Web Developer"}
                       </h6>
                       <div className="content-description">
                         <p>
-                          I am a freelancer based in the United Kingdom and i
-                          have been building noteworthy UX/UI designs and
-                          websites for years, which comply with the latest
-                          design trends. I help convert a vision and an idea
-                          into meaningful and useful products. Having a sharp
-                          eye for product evolution helps me prioritize tasks,
-                          iterate fast and deliver faster.
+                          I am a freelancer based in Viet Nam and websites for
+                          years, which comply with the latest design trends. I
+                          help convert a vision and an idea into meaningful and
+                          useful products. Having a sharp eye for product
+                          evolution helps me prioritize tasks, iterate fast and
+                          deliver faster.
                         </p>
                       </div>
                       <address className="content-info">
                         <div className="row">
                           <div className="col-12 col-md-6 single-info">
                             <span>Name:</span>
-                            <p>Emma Smith</p>
+                            <p>Thi Ly Linh</p>
                           </div>
                           <div className="col-12 col-md-6 single-info">
                             <span>Email:</span>
                             <p>
-                              <a href="mailto:emma@example.com">
-                                emma@example.com
+                              <a href="mailto:thilylinh98@gmail.com">
+                                thilylinh98@gmail.com
                               </a>
                             </p>
                           </div>
@@ -69,11 +74,11 @@ export default function About() {
                         <div className="row">
                           <div className="col-12 col-md-6 single-info">
                             <span>Age:</span>
-                            <p>21</p>
+                            <p>23</p>
                           </div>
                           <div className="col-12 col-md-6 single-info">
                             <span>From:</span>
-                            <p>Liverpool, UK</p>
+                            <p>DaNang, VN</p>
                           </div>
                         </div>
                       </address>
@@ -87,29 +92,26 @@ export default function About() {
                         </a>
                         <ul className="list-unstyled list-inline content-follow">
                           <li className="list-inline-item">
-                            <a href="#0">
-                              <i className="icon ion-logo-twitter"></i>
-                            </a>
+                            <Link href="https://www.facebook.com/linh.thily.92">
+                              <a>
+                                <FontAwesomeIcon
+                                  icon={faFacebook}
+                                  color="#ffffff"
+                                  size="1x"
+                                />
+                              </a>
+                            </Link>
                           </li>
                           <li className="list-inline-item">
-                            <a href="#0">
-                              <i className="icon ion-logo-instagram"></i>
-                            </a>
-                          </li>
-                          <li className="list-inline-item">
-                            <a href="#0">
-                              <i className="icon ion-logo-linkedin"></i>
-                            </a>
-                          </li>
-                          <li className="list-inline-item">
-                            <a href="#0">
-                              <i className="icon ion-logo-github"></i>
-                            </a>
-                          </li>
-                          <li className="list-inline-item">
-                            <a href="#0">
-                              <i className="icon ion-logo-facebook"></i>
-                            </a>
+                            <Link href="https://github.com/thilylinh">
+                              <a>
+                                <FontAwesomeIcon
+                                  icon={faGithub}
+                                  color="#ffffff"
+                                  size="1x"
+                                ></FontAwesomeIcon>
+                              </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -129,72 +131,38 @@ export default function About() {
                     </div>
                   </div>
                 </div>
+
                 <div className="row">
-                  <div className="col-12 col-md-6 col-lg-4">
-                    <div className="single-service">
-                      <i className="icon service-icon ion-logo-css3"></i>
-                      <h6 className="service-title">Design Trends</h6>
-                      <p className="service-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="col-12 col-md-6 col-lg-4">
-                    <div className="single-service">
-                      <i className="icon service-icon ion-md-images"></i>
-                      <h6 className="service-title">PSD Design</h6>
-                      <p className="service-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="col-12 col-md-6 col-lg-4">
-                    <div className="single-service">
-                      <i className="icon service-icon ion-logo-ionic"></i>
-                      <h6 className="service-title">Customer Support</h6>
-                      <p className="service-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="col-12 col-md-6 col-lg-4">
-                    <div className="single-service">
-                      <i className="icon service-icon ion-logo-wordpress"></i>
-                      <h6 className="service-title">Web Development</h6>
-                      <p className="service-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="col-12 col-md-6 col-lg-4">
-                    <div className="single-service">
-                      <i className="icon service-icon ion-md-move"></i>
-                      <h6 className="service-title">Fully Responsive</h6>
-                      <p className="service-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="col-12 col-md-6 col-lg-4">
-                    <div className="single-service">
-                      <i className="icon service-icon ion-ios-rocket"></i>
-                      <h6 className="service-title">Branding</h6>
-                      <p className="service-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.
-                      </p>
-                    </div>
-                  </div>
+                  <ServiceItem
+                    icon="faGithub"
+                    title="Web Developer"
+                    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                  ></ServiceItem>
+                  <ServiceItem
+                    icon="faGithub"
+                    title="Web Developer"
+                    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                  ></ServiceItem>
+                  <ServiceItem
+                    icon="faGithub"
+                    title="Web Developer"
+                    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                  ></ServiceItem>
+                  <ServiceItem
+                    icon="faGithub"
+                    title="Web Developer"
+                    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                  ></ServiceItem>
+                  <ServiceItem
+                    icon="faGithub"
+                    title="Web Developer"
+                    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                  ></ServiceItem>
+                  <ServiceItem
+                    icon="faGithub"
+                    title="Web Developer"
+                    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                  ></ServiceItem>
                 </div>
               </div>
 
@@ -209,92 +177,9 @@ export default function About() {
                     </div>
                   </div>
                 </div>
+
                 <div className="my-slider">
-                  <div className="slider-item">
-                    <div className="single-review swiper-slide">
-                      <div className="review-header d-flex justify-content-between">
-                        <div className="review-client">
-                          <div className="media">
-                            <image
-                              className="img-fluid rounded-circle client-avatar"
-                              src="img/client-1.jpg"
-                              alt="Client"
-                            />
-                            <div className="client-details">
-                              <h6 className="client-name">Julia Sakura</h6>
-                              <span className="client-role">
-                                Envato Customer
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        <i className="icon ion-md-quote review-icon"></i>
-                      </div>
-                      <p className="review-content">
-                        Emma did an excellent creative job, addressing our
-                        request quickly, and also providing her own graphic
-                        insight, being open to feedback and changes or edits
-                        when they arose. She worked with us the entire way.
-                        Highly recommended.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="slider-item">
-                    <div className="single-review swiper-slide">
-                      <div className="review-header d-flex justify-content-between">
-                        <div className="review-client">
-                          <div className="media">
-                            <image
-                              className="img-fluid rounded-circle client-avatar"
-                              src="img/client-2.jpg"
-                              alt="Client"
-                            />
-                            <div className="client-details">
-                              <h6 className="client-name">John Santana</h6>
-                              <span className="client-role">Entrepreneur</span>
-                            </div>
-                          </div>
-                        </div>
-                        <i className="icon ion-md-quote review-icon"></i>
-                      </div>
-                      <p className="review-content">
-                        Emma did an excellent creative job, addressing our
-                        request quickly, and also providing her own graphic
-                        insight, being open to feedback and changes or edits
-                        when they arose. She worked with us the entire way.
-                        Highly recommended.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="slider-item">
-                    <div className="single-review swiper-slide">
-                      <div className="review-header d-flex justify-content-between">
-                        <div className="review-client">
-                          <div className="media">
-                            <image
-                              className="img-fluid rounded-circle client-avatar"
-                              src="img/client-3.jpg"
-                              alt="Client"
-                            />
-                            <div className="client-details">
-                              <h6 className="client-name">Maria Wilson</h6>
-                              <span className="client-role">
-                                Envato Customer
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        <i className="icon ion-md-quote review-icon"></i>
-                      </div>
-                      <p className="review-content">
-                        Emma did an excellent creative job, addressing our
-                        request quickly, and also providing her own graphic
-                        insight, being open to feedback and changes or edits
-                        when they arose. She worked with us the entire way.
-                        Highly recommended.
-                      </p>
-                    </div>
-                  </div>
+                  <CarouselMulti />
                 </div>
               </div>
 
